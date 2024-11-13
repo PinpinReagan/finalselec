@@ -80,7 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
         );
       } on FirebaseAuthException catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(e.message ?? 'Registration failed')),
+          SnackBar(content: Text(e.message ?? 'Registration fadsiled')),
         );
       }
     }
